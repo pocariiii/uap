@@ -95,6 +95,7 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 - **Non-trainable Params**: 0 (0.00 B)
 
 ### Mendapatkan hasil sebagai berikut : 
+<<<<<<< HEAD
 ![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
 
 ![image](https://github.com/pocariiii/uap/blob/dc1ee231c7dea72fedf00ef2c3246ef0927f582c/assets/img/epoch%20cnn%20loss.png)
@@ -125,6 +126,11 @@ Berikut adalah hasil evaluasi model menggunakan metrik **precision**, **recall**
    - Recall 0.69
    - F1-Score 0.69
 
+=======
+- ![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
+
+- ![image](https://github.com/pocariiii/uap/blob/dc1ee231c7dea72fedf00ef2c3246ef0927f582c/assets/img/epoch%20cnn%20loss.png)
+>>>>>>> b33d8a1e9085566df87f3a7e12786c47bf4c8115
 
 ### 2. **MobileNetV2**
 
