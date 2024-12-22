@@ -11,7 +11,7 @@ Aplikasi ini adalah platform berbasis web yang dirancang untuk membantu pengguna
 - Plastik
 - Residu
 
-Untuk dataset sampah diambil dari [kaggle](https://www.kaggle.com/datasets/fathurrahmanalfarizy/sampah-daur-ulang).
+Untuk dataset diambil dari [kaggle](https://www.kaggle.com/datasets/fathurrahmanalfarizy/sampah-daur-ulang).
 
 ## Augmentasi
 Dataset awal terdiri dari 7014 gambar dengan distribusi per kelas sebagai berikut: Kaca (1110 gambar), Kardus (624 gambar), Kertas (1807 gambar), Plastik (1257 gambar), Residu (1006 gambar), dan Logam (1210 gambar). Untuk meningkatkan jumlah data dan memperbaiki keseimbangan antar kelas, dilakukan teknik augmentasi data sehingga jumlah gambar per kelas menjadi: Kaca (1800 gambar), Kardus (1248 gambar), Kertas (1807 gambar), Plastik (1800 gambar), Residu (1800 gambar), dan Logam (1800 gambar). Setelah augmentasi, total dataset meningkat menjadi 10.255 gambar.
