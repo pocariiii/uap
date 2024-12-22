@@ -96,7 +96,7 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 
 ### Mendapatkan hasil sebagai berikut : 
 
-![image](assets/img/akurasi mobilenetv2.png)
+![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
 
 ### 2. **MobileNetV2**
 
