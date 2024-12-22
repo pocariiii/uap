@@ -11,6 +11,7 @@
 - Plastik
 - Residu
 
+Untuk dataset sampah diambil dari [kaggle](https://www.kaggle.com/datasets/fathurrahmanalfarizy/sampah-daur-ulang).
 ### Tujuan Pengembangan
 
 1. Meningkatkan kesadaran tentang pengelompokan sampah untuk mendukung daur ulang.
