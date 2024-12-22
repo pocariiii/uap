@@ -94,6 +94,11 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 - **Output**: Prediksi probabilitas untuk enam kelas sampah
 - **Preprocessing**: Normalisasi piksel (0-1)
 
+### Mendapatkan hasil sebagai berikut : 
+
+![Hasil](![Hasil](https://raw.githubusercontent.com/pocariiii/repo/main/assets/img/epoch_cnn_akurasi.png)
+)
+
 ### 2. **MobileNetV2**
 
 MobileNetV2 digunakan karena keunggulannya dalam efisiensi dan akurasi untuk klasifikasi gambar. Model ini dilatih pada dataset yang sama dengan arsitektur berikut:
