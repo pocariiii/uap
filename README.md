@@ -12,6 +12,13 @@
 - Residu
 
 Untuk dataset sampah diambil dari [kaggle](https://www.kaggle.com/datasets/fathurrahmanalfarizy/sampah-daur-ulang).
+
+## Augmentasi
+Dataset awal terdiri dari 7014 gambar dengan distribusi per kelas sebagai berikut: Kaca (1110 gambar), Kardus (624 gambar), Kertas (1807 gambar), Plastik (1257 gambar), Residu (1006 gambar), dan Logam (1210 gambar). Untuk meningkatkan jumlah data dan memperbaiki keseimbangan antar kelas, dilakukan teknik augmentasi data sehingga jumlah gambar per kelas menjadi: Kaca (1800 gambar), Kardus (1248 gambar), Kertas (1807 gambar), Plastik (1800 gambar), Residu (1800 gambar), dan Logam (1800 gambar). Setelah augmentasi, total dataset meningkat menjadi 10.255 gambar.
+
+## Preprocessing
+Pada tahap preprocessing, dataset diolah menggunakan generator untuk menyiapkan data pelatihan dan validasi. Gambar pada dataset pelatihan dan validasi dinormalisasi dengan membagi nilai piksel dengan `255` untuk mengubah skala piksel menjadi rentang [0, 1]. Dimensi gambar diubah menjadi 128x128 piksel untuk menyamakan ukuran input model. Data pelatihan dihasilkan menggunakan `ImageDataGenerator` tanpa augmentasi tambahan, sedangkan data validasi diatur tanpa pengacakan (`shuffle=False`) untuk memastikan evaluasi konsisten dengan label aslinya. Kedua generator menghasilkan batch data dengan ukuran 32 dan mendukung klasifikasi multi-kelas menggunakan `class_mode='categorical`.
+
 ### Tujuan Pengembangan
 
 1. Meningkatkan kesadaran tentang pengelompokan sampah untuk mendukung daur ulang.
@@ -54,7 +61,7 @@ altair
 Jalankan aplikasi menggunakan perintah berikut:
 
 ```bash
-streamlit run app.py
+streamlit run src/klasifikasi/app.py
 ```
 
 ### 4. Akses Aplikasi Web
