@@ -28,8 +28,8 @@ Ikuti langkah-langkah berikut untuk menginstal dependencies dan menjalankan apli
 Clone repositori ini ke komputer Anda:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/pocariiii/uap.git
+cd uap
 ```
 
 ### 2. Instal Dependencies
@@ -96,7 +96,7 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 
 ### Mendapatkan hasil sebagai berikut : 
 
-![Hasil](https://imgur.com/a/7kZLFlK)
+![image]()
 
 ### 2. **MobileNetV2**
 
