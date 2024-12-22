@@ -96,7 +96,7 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 
 ### Mendapatkan hasil sebagai berikut : 
 
-![image]()
+![image](assets/img/akurasi mobilenetv2.png)
 
 ### 2. **MobileNetV2**
 
@@ -123,7 +123,7 @@ Berikut adalah perbandingan performa model pada dataset validasi:
 
 ### Grafik Metrik Evaluasi
 
-![Metrik Evaluasi](grafik_metrik_evaluasi.png)
+![Metrik Evaluasi]()
 
 ### Analisis
 
