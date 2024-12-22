@@ -2,7 +2,7 @@
 
 ## Deskripsi Proyek
 
- Ini merupakan aplikasi berbasis web untuk klasifikasi sampah menggunakan model deep learning. Aplikasi ini membantu pengguna untuk mengenali jenis sampah berdasarkan gambar yang diunggah atau diambil melalui kamera perangkat. Klasifikasi dilakukan menjadi enam kategori utama:
+Aplikasi ini adalah platform berbasis web yang dirancang untuk membantu pengguna mengidentifikasi jenis sampah daur ulang dengan memanfaatkan teknologi deep learning. Melalui aplikasi ini, pengguna dapat mengunggah gambar atau menggunakan kamera perangkat untuk memindai sampah yang ingin dikenali. Sistem secara otomatis akan mengklasifikasikan sampah tersebut ke dalam enam kategori utama, yaitu Kaca, Kardus, Kertas, Logam, Plastik, dan Residu, sehingga mendukung pengelolaan sampah yang lebih efisien dan ramah lingkungan. Klasifikasi dilakukan menjadi enam kategori utama:
 
 - Kaca
 - Kardus
