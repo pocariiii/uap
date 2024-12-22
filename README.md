@@ -95,7 +95,6 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 - **Non-trainable Params**: 0 (0.00 B)
 
 ### Mendapatkan hasil sebagai berikut : 
-<<<<<<< HEAD
 ![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
 
 ![image](https://github.com/pocariiii/uap/blob/dc1ee231c7dea72fedf00ef2c3246ef0927f582c/assets/img/epoch%20cnn%20loss.png)
@@ -126,11 +125,6 @@ Berikut adalah hasil evaluasi model menggunakan metrik **precision**, **recall**
    - Recall 0.69
    - F1-Score 0.69
 
-=======
-- ![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
-
-- ![image](https://github.com/pocariiii/uap/blob/dc1ee231c7dea72fedf00ef2c3246ef0927f582c/assets/img/epoch%20cnn%20loss.png)
->>>>>>> b33d8a1e9085566df87f3a7e12786c47bf4c8115
 
 ### 2. **MobileNetV2**
 
@@ -195,4 +189,8 @@ Hasil evaluasi model menunjukkan performa sebagai berikut:
 Kesimpulannya, model ``MobileNetV2`` menunjukkan kinerja yang jauh lebih unggul dibandingkan model ``CNN``, dengan akurasi total sebesar 87% dibandingkan 69%. MobileNetV2 menunjukkan peningkatan signifikan pada semua metrik, termasuk precision, recall, dan F1-score di seluruh kelas, terutama pada kelas ``Kaca`` dan ``Kardus``, yang mengalami peningkatan F1-score dari 0.72 menjadi 0.89 dan dari 0.74 menjadi 0.90. Dengan performa yang lebih andal dan akurat, ``MobileNetV2`` direkomendasikan untuk implementasi klasifikasi sampah. Sementara itu, model CNN dapat digunakan sebagai baseline, namun memerlukan optimasi lebih lanjut untuk meningkatkan performanya.
 
 ## Web 
+![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/awal.png)
 
+![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/hasilweb.png)
+
+![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/akurasinya.png)
