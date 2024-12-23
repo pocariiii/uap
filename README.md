@@ -195,11 +195,11 @@ Hasil evaluasi model menunjukkan performa sebagai berikut:
 Kesimpulannya, model ``MobileNetV2`` menunjukkan kinerja yang jauh lebih unggul dibandingkan model ``CNN``, dengan akurasi total sebesar 87% dibandingkan 69%. MobileNetV2 menunjukkan peningkatan signifikan pada semua metrik, termasuk precision, recall, dan F1-score di seluruh kelas, terutama pada kelas ``Kaca`` dan ``Kardus``, yang mengalami peningkatan F1-score dari 0.72 menjadi 0.89 dan dari 0.74 menjadi 0.90. Dengan performa yang lebih andal dan akurat, ``MobileNetV2`` direkomendasikan untuk implementasi klasifikasi sampah. Sementara itu, model CNN dapat digunakan sebagai baseline, namun memerlukan optimasi lebih lanjut untuk meningkatkan performanya.
 
 ## Web 
-![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/awal.png)
+![img](https://github.com/pocariiii/uap/blob/9afe5c5c2060ea64da62f6d2cb985bfb48661c7d/assets/img/ss.png)
 
-![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/hasilweb.png)
+![img](https://github.com/pocariiii/uap/blob/9afe5c5c2060ea64da62f6d2cb985bfb48661c7d/assets/img/ss%202.png)
 
-![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/akurasinya.png)
+![img](https://github.com/pocariiii/uap/blob/9afe5c5c2060ea64da62f6d2cb985bfb48661c7d/assets/img/ss%203.png)
 
 # Author
 202110370311421 - Angga Rofiul Putra
