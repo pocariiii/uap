@@ -107,9 +107,9 @@ klasifikasi gambar dengan arsitektur sebagai berikut:
 - **Non-trainable Params**: 0 (0.00 B)
 
 ### Mendapatkan hasil sebagai berikut : 
-![image](https://github.com/pocariiii/uap/blob/a8496a6ce72998e73defaa796ae12cd63266e07a/assets/img/epoch_cnn_akurasi.png)
+![image](https://github.com/pocariiii/uap/blob/80657a24fe34d762dc5e19c82905c953ffc7dbfc/assets/img/train%20cnn.png)
 
-![image](https://github.com/pocariiii/uap/blob/dc1ee231c7dea72fedf00ef2c3246ef0927f582c/assets/img/epoch%20cnn%20loss.png)
+![image](https://github.com/pocariiii/uap/blob/80657a24fe34d762dc5e19c82905c953ffc7dbfc/assets/img/loss%20cnn.png)
 
 Dari plot histogram mengalami overvit
 
@@ -119,23 +119,20 @@ Berikut adalah hasil evaluasi model menggunakan metrik **precision**, **recall**
 
 | Kelas      | Precision | Recall | F1-Score | Jumlah Data |
 |------------|-----------|--------|----------|-------------|
-| **Kaca**   | 0.72      | 0.73   | 0.72     | 540         |
-| **Kardus** | 0.73      | 0.75   | 0.74     | 375         |
-| **Kertas** | 0.74      | 0.65   | 0.69     | 543         |
-| **Logam**  | 0.64      | 0.69   | 0.66     | 540         |
-| **Plastik**| 0.66      | 0.69   | 0.67     | 540         |
-| **Residu** | 0.69      | 0.69   | 0.69     | 540         |
+| **O**   | 0.85      | 0.96   | 0.90     | 1401         |
+| **R** | 0.93      | 0.78   | 0.85     | 1112
+
 
 ### **Akurasi Total**
-- **Accuracy**: 69%
+- **Accuracy**: 88%
 - **Macro Avg**: 
-   - Precision 0.70
-   - Recall 0.70
-   - F1-Score 0.70
+   - Precision 0.88
+   - Recall 0.87
+   - F1-Score 0.88
 - **Weighted Avg**: 
-   - Precision 0.70
-   - Recall 0.69
-   - F1-Score 0.69
+   - Precision 0.88
+   - Recall 0.88
+   - F1-Score 0.88
 
 
 ### 2. **MobileNetV2**
@@ -156,25 +153,22 @@ MobileNetV2 adalah arsitektur jaringan saraf konvolusional (CNN) yang dirancang 
 
 Hasil evaluasi model menunjukkan performa sebagai berikut:
 
-| Kelas      | Precision | Recall | F1-Score | Support |
-|------------|-----------|--------|----------|---------|
-| **Kaca**   | 0.91      | 0.88   | 0.89     | 535     |
-| **Kardus** | 0.87      | 0.92   | 0.90     | 369     |
-| **Kertas** | 0.90      | 0.88   | 0.89     | 543     |
-| **Logam**  | 0.87      | 0.89   | 0.88     | 536     |
-| **Plastik**| 0.85      | 0.82   | 0.84     | 538     |
-| **Residu** | 0.85      | 0.85   | 0.85     | 530     |
+| Kelas      | Precision | Recall | F1-Score | Jumlah Data |
+|------------|-----------|--------|----------|-------------|
+| **O**   | 0.90      | 0.96   | 0.93     | 1401         |
+| **R** | 0.95      | 0.87   | 0.90     | 1112
+
 
 ### **Akurasi Total**
-- **Accuracy**: 87%
-- **Macro Average**:
-  - Precision: 0.87
-  - Recall: 0.88
-  - F1-Score: 0.87
-- **Weighted Average**:
-  - Precision: 0.87
-  - Recall: 0.87
-  - F1-Score: 0.87
+- **Accuracy**: 92%
+- **Macro Avg**: 
+   - Precision 0.92
+   - Recall 0.91
+   - F1-Score 0.92
+- **Weighted Avg**: 
+   - Precision 0.92
+   - Recall 0.92
+   - F1-Score 0.92
 
 
 
