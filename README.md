@@ -145,9 +145,9 @@ MobileNetV2 adalah arsitektur jaringan saraf konvolusional (CNN) yang dirancang 
 - **Preprocessing**: Normalisasi piksel (0-1)
 
 ### Mendapatkan hasil berikut ini :
-![image](https://github.com/pocariiii/uap/blob/b33d8a1e9085566df87f3a7e12786c47bf4c8115/assets/img/akurasi%20mobilenetv2.png)
+![image](https://github.com/pocariiii/uap/blob/6afc6c83339a38f211c7a805995861cc663b2cf8/assets/img/train%20mobilenetv2.png)
 
-![image](https://github.com/pocariiii/uap/blob/b33d8a1e9085566df87f3a7e12786c47bf4c8115/assets/img/loss%20mobilenetv2.png)
+![image](https://github.com/pocariiii/uap/blob/6afc6c83339a38f211c7a805995861cc663b2cf8/assets/img/loss%20mobilenetv2.png)
 
 ## Classification Report
 
