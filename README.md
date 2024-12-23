@@ -176,23 +176,16 @@ Hasil evaluasi model menunjukkan performa sebagai berikut:
 - Model 1 = `CNN`
 - Model 2 = `MobileNetv2`
 
-| Kelas      | Precision (Model 1) | Recall (Model 1) | F1-Score (Model 1) | Precision (Model 2) | Recall (Model 2) | F1-Score (Model 2) |
-|------------|----------------------|------------------|--------------------|----------------------|------------------|--------------------|
-| **Kaca**   | 0.72                 | 0.73             | 0.72               | 0.91                 | 0.88             | 0.89               |
-| **Kardus** | 0.73                 | 0.75             | 0.74               | 0.87                 | 0.92             | 0.90               |
-| **Kertas** | 0.74                 | 0.65             | 0.69               | 0.90                 | 0.88             | 0.89               |
-| **Logam**  | 0.64                 | 0.69             | 0.66               | 0.87                 | 0.89             | 0.88               |
-| **Plastik**| 0.66                 | 0.69             | 0.67               | 0.85                 | 0.82             | 0.84               |
-| **Residu** | 0.69                 | 0.69             | 0.69               | 0.85                 | 0.85             | 0.85               |
+| **Kelas**               | **Precision (MobileNetV2)** | **Recall (MobileNetV2)** | **F1-Score (MobileNetV2)** | **Jumlah Data (MobileNetV2)** | **Precision (CNN)** | **Recall (CNN)** | **F1-Score (CNN)** | **Jumlah Data (CNN)** |
+|--------------------------|----------------------------|--------------------------|----------------------------|-------------------------------|---------------------|------------------|---------------------|-----------------------|
+| **Organik (O)**          | 0.90                      | 0.96                     | 0.93                       | 1401                          | 0.85                | 0.96             | 0.90                | 1401                  |
+| **Non-Organik (R)**      | 0.95                      | 0.87                     | 0.90                       | 1112                          | 0.93                | 0.78             | 0.85                | 1112                  |
+| **Total Akurasi**        | 0.92                      | N/A                      | N/A                        | N/A                           | 0.88                | N/A              | N/A                 | N/A                   |
+| **Rata-rata Macro**      | 0.92                      | 0.91                     | 0.92                       | N/A                           | 0.88                | 0.87             | 0.88                | N/A                   |
+| **Rata-rata Weighted**   | 0.92                      | 0.92                     | 0.92                       | N/A                           | 0.88                | 0.88             | 0.88                | N/A                   |
 
-### **Akurasi Total**
-| Metric              | Model 1 | Model 2 |
-|---------------------|---------|---------|
-| **Accuracy**        | 69%     | 87%     |
-| **Macro Avg**       | 0.70    | 0.87    |
-| **Weighted Avg**    | 0.70    | 0.87    |
 
-Kesimpulannya, model ``MobileNetV2`` menunjukkan kinerja yang jauh lebih unggul dibandingkan model ``CNN``, dengan akurasi total sebesar 87% dibandingkan 69%. MobileNetV2 menunjukkan peningkatan signifikan pada semua metrik, termasuk precision, recall, dan F1-score di seluruh kelas, terutama pada kelas ``Kaca`` dan ``Kardus``, yang mengalami peningkatan F1-score dari 0.72 menjadi 0.89 dan dari 0.74 menjadi 0.90. Dengan performa yang lebih andal dan akurat, ``MobileNetV2`` direkomendasikan untuk implementasi klasifikasi sampah. Sementara itu, model CNN dapat digunakan sebagai baseline, namun memerlukan optimasi lebih lanjut untuk meningkatkan performanya.
+Berdasarkan hasil evaluasi, model **MobileNetV2** menunjukkan kinerja yang lebih baik dibandingkan model **CNN** dalam hal akurasi total, precision, recall, dan F1-score, terutama pada kelas **Non-Organik**. MobileNetV2 mencapai akurasi total sebesar **92%**, dengan rata-rata precision dan F1-score masing-masing sebesar **0.92**, mengindikasikan konsistensi dalam mengenali kedua kelas. Sementara itu, model CNN memiliki akurasi total sebesar **88%**, dengan performa yang lebih rendah pada kelas **Non-Organik**. Dengan hasil ini, model MobileNetV2 direkomendasikan untuk digunakan dalam klasifikasi dataset sampah ini karena menawarkan performa yang lebih andal dan presisi yang lebih tinggi.
 
 ## Web 
 ![img](https://github.com/pocariiii/uap/blob/9afe5c5c2060ea64da62f6d2cb985bfb48661c7d/assets/img/ss.png)

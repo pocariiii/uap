@@ -12,7 +12,7 @@ img_width, img_height = 128, 128
 # Load model
 @st.cache_resource
 def load_mobilenet_model():
-    return load_model('mobilenet_model.h5')
+    return load_model('src/klasifikasi/model/mobilenet_model.h5')
 
 model = load_mobilenet_model()
 
