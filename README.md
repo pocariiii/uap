@@ -2,30 +2,34 @@
 
 ## Deskripsi Proyek
 
-Aplikasi ini adalah platform berbasis web yang dirancang untuk membantu pengguna mengidentifikasi jenis sampah daur ulang dengan memanfaatkan teknologi deep learning. Melalui aplikasi ini, pengguna dapat mengunggah gambar atau menggunakan kamera perangkat untuk memindai sampah yang ingin dikenali. Sistem secara otomatis akan mengklasifikasikan sampah tersebut ke dalam enam kategori utama, yaitu Kaca, Kardus, Kertas, Logam, Plastik, dan Residu, sehingga mendukung pengelolaan sampah yang lebih efisien dan ramah lingkungan. Klasifikasi dilakukan menjadi enam kategori utama:
+Aplikasi ini adalah platform berbasis web yang dirancang untuk membantu pengguna mengidentifikasi jenis sampah daur ulang dengan memanfaatkan teknologi deep learning. Melalui aplikasi ini, pengguna dapat mengunggah gambar atau menggunakan kamera perangkat untuk memindai sampah yang ingin dikenali. Sistem secara otomatis akan mengklasifikasikan sampah tersebut ke dalam dua kategori utama, yaitu organik dan non organik, sehingga mendukung pengelolaan sampah yang lebih efisien dan ramah lingkungan. Klasifikasi dilakukan menjadi dua kategori utama:
 
-- Kaca
-- Kardus
-- Kertas
-- Logam
-- Plastik
-- Residu
+- Organik
+- Non Organik
 
-Untuk dataset diambil dari [kaggle](https://www.kaggle.com/datasets/fathurrahmanalfarizy/sampah-daur-ulang).
+Untuk dataset diambil dari [kaggle](https://www.kaggle.com/datasets/techsash/waste-classification-data).
 
-## Augmentasi
-Dataset awal terdiri dari 7014 gambar dengan distribusi per kelas sebagai berikut: Kaca (1110 gambar), Kardus (624 gambar), Kertas (1807 gambar), Plastik (1257 gambar), Residu (1006 gambar), dan Logam (1210 gambar). Untuk meningkatkan jumlah data dan memperbaiki keseimbangan antar kelas, dilakukan teknik augmentasi data sehingga jumlah gambar per kelas menjadi: Kaca (1800 gambar), Kardus (1248 gambar), Kertas (1807 gambar), Plastik (1800 gambar), Residu (1800 gambar), dan Logam (1800 gambar). Setelah augmentasi, total dataset meningkat menjadi 10.255 gambar.
+# Distribusi Dataset
+
+Dataset ini terdiri dari gambar yang dikategorikan ke dalam dua kelas: **Organik** dan **Non-Organik**. Berikut adalah distribusi detail dari dataset:
+
+## Dataset Pelatihan
+- **Organik (O):** 12.565 gambar
+- **Non-Organik (R):** 9.999 gambar  
+**Total Dataset Pelatihan:** 22.564 gambar
+
+## Dataset Pengujian
+- **Organik (O):** 1.401 gambar
+- **Non-Organik (R):** 1.112 gambar  
+**Total Dataset Pengujian:** 2.513 gambar
+
+## Ringkasan
+Dataset ini berisi total **25.077 gambar**, dengan **22.564 gambar** untuk pelatihan dan **2.513 gambar** untuk pengujian. Distribusi ini memastikan evaluasi model yang seimbang terhadap data yang belum pernah dilihat sebelumnya.
+
 
 ## Preprocessing
 Pada tahap preprocessing, dataset diolah menggunakan generator untuk menyiapkan data pelatihan dan validasi. Gambar pada dataset pelatihan dan validasi dinormalisasi dengan membagi nilai piksel dengan `255` untuk mengubah skala piksel menjadi rentang [0, 1]. Dimensi gambar diubah menjadi 128x128 piksel untuk menyamakan ukuran input model. Data pelatihan dihasilkan menggunakan `ImageDataGenerator` tanpa augmentasi tambahan, sedangkan data validasi diatur tanpa pengacakan (`shuffle=False`) untuk memastikan evaluasi konsisten dengan label aslinya. Kedua generator menghasilkan batch data dengan ukuran 32 dan mendukung klasifikasi multi-kelas menggunakan `class_mode='categorical`.
 
-### Tujuan Pengembangan
-
-1. Meningkatkan kesadaran tentang pengelompokan sampah untuk mendukung daur ulang.
-2. Memberikan alat berbasis AI yang mudah digunakan untuk mengenali jenis sampah.
-3. Mengintegrasikan teknologi deep learning dengan antarmuka yang ramah pengguna.
-
----
 
 ## Langkah Instalasi
 
@@ -202,3 +206,6 @@ Kesimpulannya, model ``MobileNetV2`` menunjukkan kinerja yang jauh lebih unggul 
 ![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/hasilweb.png)
 
 ![img](https://github.com/pocariiii/uap/blob/f1fdd6e73d309595f287e19b1d07699355d4dcc7/assets/img/akurasinya.png)
+
+# Author
+202110370311421 - Angga Rofiul Putra

@@ -12,12 +12,12 @@ img_width, img_height = 128, 128
 # Load model
 @st.cache_resource
 def load_mobilenet_model():
-    return load_model('src/klasifikasi/model/mobilenet_model.h5')
+    return load_model('mobilenet_model.h5')
 
 model = load_mobilenet_model()
 
 # Class labels
-class_labels = ['Kaca', 'Kardus', 'Kertas', 'Logam', 'Plastik', 'Residu']
+class_labels = ['Organik', 'Non-Organik']
 
 # Fungsi untuk prediksi
 def predict_image(image):
@@ -32,15 +32,15 @@ def predict_image(image):
     confidence = np.max(predictions)
     return class_labels[predicted_class], confidence, predictions[0]
 
-
 # Header
 st.markdown(
     """
     <div style="text-align: center;">
         <h1>🗑️ Klasifikasi Sampah</h1>
         <p style="font-size: 18px; color: gray;">
-            Aplikasi ini membantu mengklasifikasikan jenis sampah menjadi 6 kategori:
-            <b>Kaca, Kardus, Kertas, Logam, Plastik, dan Residu</b>.
+            Aplikasi ini membantu mengklasifikasikan jenis sampah menjadi 2 kategori utama:<br>
+            <b>Organik:</b> Sampah yang dapat terurai secara alami<br>
+            <b>Non-Organik:</b> Sampah yang tidak dapat terurai secara alami
         </p>
     </div>
     """,
@@ -70,7 +70,6 @@ with col2:
 # Divider untuk hasil prediksi
 st.markdown("---")
 
-# Tempat untuk menyimpan gambar yang akan diproses
 images_to_process = []
 
 # Proses gambar yang diupload
@@ -103,7 +102,7 @@ if images_to_process:
                 f"""
                 <div style="font-size: 18px;">
                     <b>Prediksi Gambar {i + 1}:</b><br>
-                    - Prediksi : {predicted_class}<br>
+                    - Kategori : {predicted_class}<br>
                     - Probabilitas : {confidence:.2f}
                 </div>
                 """,
@@ -125,8 +124,14 @@ if images_to_process:
                 y=alt.Y("Probabilitas", title="Probabilitas (%)", scale=alt.Scale(domain=[0, 1])),
                 color=alt.Color("Kelas", scale=alt.Scale(scheme="tableau10")),
             )
-            .properties(width=600, height=400)
-        )
+            + alt.Chart(probabilities_df)
+            .mark_text(dy=-10)
+            .encode(
+                x=alt.X("Kelas", sort="-y"),
+                y=alt.Y("Probabilitas"),
+                text=alt.Text("Probabilitas:Q", format=".2%"),
+            )
+        ).properties(width=600, height=400)
         st.altair_chart(chart, use_container_width=True)
 else:
     st.info("Silakan unggah gambar atau gunakan kamera untuk mengambil gambar.")
